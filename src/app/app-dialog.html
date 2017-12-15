@@ -1,0 +1,67 @@
+
+
+<h1 mat-dialog-title>Menu Stuff </h1>
+<div mat-dialog-content>
+   <mat-accordion multi="true">
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Check stuff
+      </mat-panel-title>
+      <mat-panel-description>
+        Check stuff to do things
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <mat-checkbox>Check me!</mat-checkbox>
+    <br>
+    <mat-checkbox>Check me also!</mat-checkbox>
+    <br>
+    <mat-checkbox>Check me also!</mat-checkbox>
+    <br>
+    <mat-checkbox>Check me also!</mat-checkbox>
+    <br>
+    <mat-checkbox>Check me also!</mat-checkbox>
+    <br>
+    <mat-checkbox>Check me also!</mat-checkbox>
+    <br>
+    <mat-checkbox>Check me also!</mat-checkbox>
+    
+  </mat-expansion-panel>
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Self aware panel
+      </mat-panel-title>
+      <mat-panel-description>
+        Currently I am {{panelOpenState ? 'open' : 'closed'}}
+      </mat-panel-description>      
+    </mat-expansion-panel-header>
+    <mat-checkbox>Check me!</mat-checkbox>
+    <br>
+    <mat-checkbox>Check me also!</mat-checkbox>
+    <br>
+    <mat-checkbox>Check me also!</mat-checkbox>
+    <br>
+    <mat-checkbox>Check me also!</mat-checkbox>
+    <br>
+    <mat-checkbox>Check me also!</mat-checkbox>
+    <br>
+    <mat-checkbox>Check me also!</mat-checkbox>
+    <br>
+    <mat-checkbox>Check me also!</mat-checkbox>
+
+  </mat-expansion-panel>
+</mat-accordion> 
+
+
+
+<!-- <p>Stuff</p> -->
+  <!-- <mat-form-field> -->
+    <!-- <input matInput tabindex="1" [(ngModel)]="data.animal"> -->
+  <!-- </mat-form-field> -->
+</div>
+<div mat-dialog-actions> 
+  <!-- <button mat-button [mat-dialog-close]="data.animal" tabindex="2">Ok</button> -->
+  <button mat-button (click)="onNoClick()" tabindex="-1">No Thanks</button>
+</div>

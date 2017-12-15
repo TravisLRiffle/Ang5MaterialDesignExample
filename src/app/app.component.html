@@ -1,0 +1,29 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+    <h1>
+      Menu Prototype!
+    </h1>
+  
+    <mat-grid-list cols="6">
+  
+    <mat-grid-tile style="background: #f0f0f5"
+        [colspan]="1">
+        <mat-nav-list>
+            <mat-list-item *ngFor="let link of links">
+               <button mat-icon-button (click)="openDialog()">
+                  <mat-icon>{{ link }}</mat-icon>
+               </button>
+            </mat-list-item>
+          </mat-nav-list>
+    </mat-grid-tile>
+  
+      <mat-grid-tile style="background: #9494b8"
+        [colspan]="5">
+        Map Goes Here. 
+    </mat-grid-tile>
+  
+  </mat-grid-list>
+  </div>
+  
+  
+  
